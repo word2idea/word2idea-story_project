@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 2rem;
+}
+
+/* 제시 단어 섹션 스타일 */
+.word-box {
+  border: 1px solid #61dafb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  min-width: 300px;
+}
+
+.word-box p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+/* 이야기 입력창 스타일 */
+.story-textarea {
+  width: 90%;
+  max-width: 500px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+}
+
+/* 모든 버튼 공통 스타일 */
+button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* 저장된 이야기 목록 스타일 */
+.story-list {
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.story-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.story-list li {
+  background-color: #3a3f4a;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+/* frontend/src/App.css 파일 맨 아래에 추가 */
+
+.word-count-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: #3a3f4a;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.word-count-selector label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.word-count-selector input[type="range"] {
+  cursor: pointer;
+}
